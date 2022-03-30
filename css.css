@@ -1,0 +1,9 @@
+#result{
+    display: flex;
+    flex-wrap: wrap;
+}
+#artistName{
+    border-radius: 5%;
+    height: 40px;
+    width: 200px;
+}
