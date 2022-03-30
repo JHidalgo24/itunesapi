@@ -9,8 +9,9 @@ $(function () {
         //query params,
         {
             term: search,
-            entity:'album,musicArtist, musicTrack',
-            limit:10
+            entity:'musicArtist, album',
+            media:'music',
+            limit:30
         },
         //function to call when a result is returned
         function (data) {
@@ -20,7 +21,6 @@ $(function () {
                   <div class="card-body">
                     <img  class="card-img-top"  src="${data.results[i].artworkUrl60}" alt="">
                     <h5 class="card-title">Artist: ${data.results[i].artistName}</h5>
-                    <h6 class="card-title">Track Name: ${data.results[i].trackName}</h6>
                     <h6 class="card-title">Collection Name: ${data.results[i].collectionName}</h6>
                     <p class="card-link">Genre:${data.results[i].primaryGenreName}</p>
                   </div>
