@@ -9,7 +9,7 @@ $(function () {
         //query params,
         {
             term: search,
-            entity:'musicArtist, musicTrack',
+            entity:'album,musicArtist, musicTrack',
             limit:10
         },
         //function to call when a result is returned
